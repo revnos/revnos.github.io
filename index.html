@@ -84,7 +84,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="搭建你的个人博客"><a href="#搭建你的个人博客" class="headerlink" title="搭建你的个人博客"></a>搭建你的个人博客</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建个人博客难吗？说白咯，搭建博客和做程序一个道理：个人的时间和精力是有限的，一个程序往往都是使用了一堆别人的东西，来完成一个属于你自己的作品。没有人能够有那样的经历和智慧在建一座砖瓦房之前研究烧砖、搭瓦，建造，结构力学等等等等。现在的时代各式开源框架、教程等都大大降低了搭建博客的难度，<br>我们所需要完成的是站在巨人们的肩膀上看远一点，想深一点。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建个人博客难吗？说白咯，搭建博客和做程序一个道理：个人的时间和精力是有限的，一个程序往往都是使用了一堆别人的东西，来完成一个属于你自己的作品。没有人能够有那样的经历和智慧在建一座砖瓦房之前研究烧砖、搭瓦，建造，结构力学等等等等。现在的时代各式开源框架、教程等都大大降低了搭建博客的难度，<br>我们所需要完成的是站在巨人们的肩膀上看远一点，想深一点。</p>
 <p>搭建我们的这样一个博客需要用到的主要配件：Hexo、Hexo 主题、Git、GithubPages、Gitment，这些都不需要自己去独立完成。而且这些都是免费的，除了买域名需要少许的钱。或者你执意要搭在自己的服务器上，当然这个从价格的计算上就不能一概而论。</p>
 <p>总之搭建自己的博客无论从价格上，还是说耗费的时间和精力上都是微不足道的。毕竟，人家设计好的东西，我们只要直接拿来用就可以了。</p>
 <h2 id="概念简要介绍"><a href="#概念简要介绍" class="headerlink" title="概念简要介绍"></a>概念简要介绍</h2><ul>
@@ -115,12 +115,15 @@
 <p>注意几点：<br>注册的邮箱一定要验证，否则不会成功；<br>仓库名字必须是：username.github.io，其中username是你的用户名；<br>仓库创建成功不会立即生效，需要过一段时间，大概10-30分钟，或者更久，我的等了半个小时才生效；</p>
 <h3 id="二、安装Git"><a href="#二、安装Git" class="headerlink" title="二、安装Git"></a>二、安装Git</h3><p>为什么要安装它呢？因为在 win 下其他的类 Linux、Unix 的 git shell 可能会在用的时候出毛病，用 git 官方的能够避免这类问题。</p>
 <p>从Git官网下载：</p>
-<p>Git - Downloading Package–win<br>Git - Downloading Package–mac<br>Git - Downloading Package–linux</p>
+<p><a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git - Downloading Package–win</a></p>
+<p><a href="https://www.git-scm.com/download/mac" target="_blank" rel="noopener">Git - Downloading Package–mac</a></p>
+<p><a href="https://www.git-scm.com/download/linux" target="_blank" rel="noopener">Git - Downloading Package–linux</a></p>
 <p>下载安装完成后，在命令行里输入 git -v 看看版本并测试是否安装成功.</p>
 <p>若安装失败，参看其他详细的 Git 安装教程。</p>
 <h3 id="三、将你本地的-Git-与-GitHub-帐号绑定"><a href="#三、将你本地的-Git-与-GitHub-帐号绑定" class="headerlink" title="三、将你本地的 Git 与 GitHub 帐号绑定"></a>三、将你本地的 Git 与 GitHub 帐号绑定</h3><p>右键唤出 Git Bash。或者在菜单里搜索 Git Bash，设置 user.name 和user.email 配置信息：</p>
-<p>git config –global user.name “你的GitHub用户名”<br>git config –global user.email “你的GitHub注册邮箱”</p>
-<p>生成ssh密钥文件：<br>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
+<pre><code>git config --global user.name &quot;你的GitHub用户名&quot;
+
+git config --global user.email &quot;你的GitHub注册邮箱&quot;</code></pre><p>生成ssh密钥文件：<br>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p>
 <p><code>cd ~/. ssh #检查本机已存在的ssh密钥</code></p>
 <p>如果提示：No such file or directory 说明你是第一次使用git。</p>
 <p>生成密匙：</p>
@@ -189,7 +192,7 @@ hexo d</code></pre><p>第三条的 hexo d 就是部署网站命令，d是deploy�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/07/teach/" data-id="ck1g9dymx0001rgv9pzawqu2g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/07/teach/" data-id="ck1g9jqlw0001acv9kdr9c800" class="article-share-link">Share</a>
       
       
     </footer>
@@ -238,7 +241,7 @@ hexo d</code></pre><p>第三条的 hexo d 就是部署网站命令，d是deploy�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/07/hello-world/" data-id="ck1g9dyml0000rgv9spim020o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/07/hello-world/" data-id="ck1g9jqlk0000acv9n8qndmz2" class="article-share-link">Share</a>
       
       
     </footer>
